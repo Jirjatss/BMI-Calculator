@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+  </head>
+
+  <body class="relative">
+    <div class="items-center lg:px-72 md:px-72 px-5 bg-sky-200 h-screen bg-cover flex m-0 font-serif" style="background-image: url(./assets/bg.jpg)">
+      <form class="bg-white px-20 py-20 rounded-xl border-2 border-[#AB74B9] w-full" id="form">
+        <h1 class="mb-5 text-center text-4xl font-medium">Check Your BMI</h1>
+        <h5 class="text-center mb-20 font-medium text-xl">Enter your weight and height below to check your BMI result</h5>
+        <div class="mb-6 mx-auto">
+          <label for="weight" class="block mb-2 ml-2 text-sm font-medium text-black">Put your weight in here (KG)</label>
+          <input type="text" id="weight" class="bg-white border border-black text-black text-sm rounded-lg block w-full p-2.5" placeholder="67" />
+        </div>
+        <div class="mb-6">
+          <label for="height" class="block mb-2 ml-2 text-sm font-medium text-black">Put your weight in here (KG)</label>
+          <input type="text" id="height" class="bg-white border border-black text-black text-sm rounded-lg block w-full p-2.5" placeholder="67" />
+        </div>
+        <div id="input">
+          <input id="submit" type="submit" value="Calculate BMI" class="px-5 py-2 rounded-lg block mx-auto text-white hover:text-black font-semibold cursor-pointer" style="background-image: url(./assets/bg.jpg)" />
+          <div>
+            <p id="hasil" class="text-center text-xl font-semibold"></p>
+          </div>
+          <div id="button" class="hidden">
+            <button class="accept handle px-5 py-2 rounded-xl block mx-auto text-white hover:text-black font-semibold cursor-pointer mt-5" style="background-image: url(./assets/bg.jpg)">OK</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
